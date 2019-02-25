@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>掘金网 - 一个IT工作者的求职社区</title>
+    <link rel="shortcut icon" href="./images/icon-man.png" type="image/x-icon" />
+    <link type="text/css" rel="styleSheet" href="./css/juejin-login.css" />
+    <script src='./js/juejjin-login.js'></script>
+</head>
+
+<body>
+    <div id='nav'>
+        <div class='top' id='left'>掘金</div>
+        <div class='top' id='login'>
+            <form action="foot.html" method="post">
+                <ul class='menu'>
+                    <li class='current' id='one1' onclick="setTab(1)">手机登陆</li>
+                    <li id='one2' onclick="setTab(2)">验证码登陆</li>
+                </ul>
+                <div class="box">
+                    <div id="phone">
+                        <!-- 手机号账号密码登录 -->
+                        <p>
+                            <input type="text" placeholder="请输入手机号" required />
+                        </p>
+                        <p>
+                            <input type="password" placeholder="请输入密码" required/>
+                        </p>
+                        <p style='text-align: right;margin-right: 10%;'>
+                            <a style='color:#01b382;' href="./register.html" target="_black">忘记密码？</a>
+                        </p>
+                        <p>
+                            <button type='submit'>登陆</button>
+                        </p>
+                    </div>
+                    <div id="phoneCode" style='display: none;'>
+                        <!-- 手机号验证码登陆 -->
+                        <p>
+                            <input type="text" placeholder="请输入手机号" required/>
+                        </p>
+                        <p>
+                            <input type="text" placeholder="请输入验证码" required/>
+                        </p>
+                        <p>
+                            <button type='submit'>登陆</button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id='fix'>
+        <span id='txt'>在掘金，发现新的工作机会</span>
+        <ul>
+            <li><a href='./login.html'>登陆</a></li>
+            <li><a href='./register.html'>注册</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

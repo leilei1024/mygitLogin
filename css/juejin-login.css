@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 设置背景图片 */
+
+body {
+    background-image: url('../images/load-img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* 设置滚动条 */
+
+body::-webkit-scrollbar {
+    width: 0px;
+    /* 滚动条的宽度 */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #09c084;
+    /* 滚动条的颜色 */
+    /* border-radius: 50px; */
+    /* 滚动条的边框倒角 */
+}
+
+
+/* 设置flex布局 */
+
+#nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 设置flex下面的两个框 */
+
+.top {
+    /* border: 1px solid #ccc; */
+    background-color: white;
+    height: 380px;
+    width: 400px;
+    margin-top: 176px;
+    /* margin-left: 10px; */
+    opacity: 0.85;
+    border-radius: 10%;
+}
+
+
+/* 设置左框的样式 */
+
+#left {
+    background: url('../images/peitu.jpg') no-repeat;
+    /* 背景模糊 */
+    /* -webkit-filter: blur(77px); */
+    /* Chrome, Opera */
+    background-size: 100% 100%;
+    /* margin-right: 100px; */
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 20px;
+    margin-top: 10px;
+}
+
+
+/* 设置右框的tab菜单 */
+
+#login ul.menu {
+    margin-left: 100px;
+    height: 50px;
+}
+
+
+/* 设置li样式 */
+
+#login ul.menu li {
+    float: left;
+    width: 95px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: white;
+    cursor: pointer;
+    list-style: none;
+    opacity: 0.85;
+}
+
+
+/* 设置点击tab菜单的样式变换 */
+
+#login ul.menu li.current {
+    color: #01b382;
+    border-bottom: 1px solid #01b382;
+}
+
+
+/* 设置tab菜单下面的框 */
+
+#login .box {
+    /*margin-left: 5%;*/
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 380px;
+    /*overflow: hidden;*/
+    margin: auto;
+}
+
+
+/* 手机登陆and手机验证码登陆  */
+
+
+/* input样式 */
+
+#login .box #phone input,
+#login .box #phoneCode input {
+    width: 300px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-left: 1px solid #01b382;
+    border-bottom: 1px solid #01b382;
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+/* button样式 */
+
+#login #phone button,
+#login #phoneCode button {
+    border: 0;
+    outline: none;
+    width: 230px;
+    height: 35px;
+    background-color: #01b382;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+
+/* 设置顶部的固定定位 */
+
+#fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #09c084;
+    height: 40px;
+    width: 100%;
+}
+
+#fix #txt {
+    color: white;
+    line-height: 40px;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+
+/* #fix #txt::before{
+
+        } */
+
+#fix ul {
+    float: right;
+}
+
+#fix ul li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+    border: 1px solid white;
+    /* color: white; */
+    padding: 4px;
+    margin-right: 40px;
+    border-radius: 20%;
+}
+
+#fix ul li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#fix ul li a:hover {
+    color: #09c084;
+}
+
+#fix ul li:hover {
+    color: #09c084;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+#fix {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    background-color: #09c084;
+    height: 40px;
+    width: 100%;
+}
+
+#fix #txt {
+    color: white;
+    line-height: 40px;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+
+/* #fix #txt::before{
+
+        } */
+
+#fix ul {
+    float: right;
+}
+
+#fix ul li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+    border: 1px solid white;
+    color: white;
+    padding: 4px;
+    margin-right: 40px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+#fix ul li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#fix ul li a:hover {
+    color: #09c084;
+}
+
+#fix ul li:hover {
+    color: #09c084;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
